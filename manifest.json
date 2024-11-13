@@ -1,0 +1,18 @@
+{
+  "name": "Easy Variables to JSON",
+  "id": "1438551883272836121",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "documentAccess": "dynamic-page",
+  "editorType": [
+    "figma"
+  ],
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  },
+  "ui": "ui.html"
+}
