@@ -6,7 +6,7 @@ type Color = {
   hex: string;
 };
 
-figma.showUI(__html__);
+figma.showUI(__html__, { width: 400, height: 600 });
 
 // Slugify string
 const s = (text: string): string => {

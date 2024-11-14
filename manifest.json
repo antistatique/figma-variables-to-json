@@ -2,7 +2,7 @@
   "name": "Easy Variables to JSON",
   "id": "1438551883272836121",
   "api": "1.0.0",
-  "main": "code.js",
+  "main": "dist/code/index.js",
   "capabilities": [],
   "enableProposedApi": false,
   "documentAccess": "dynamic-page",
@@ -14,5 +14,5 @@
       "none"
     ]
   },
-  "ui": "ui.html"
+  "ui": "dist/ui/index.html"
 }

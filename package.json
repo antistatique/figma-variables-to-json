@@ -1,13 +1,15 @@
 {
-  "name": "TBD",
+  "name": "easy-variables-to-json",
   "version": "1.0.0",
-  "description": "Easy Variables Copy",
+  "description": "Easy Variables to JSON",
   "main": "code.js",
   "scripts": {
-    "build": "bun build ./code.ts --outdir .",
-    "lint": "eslint --ext .ts,.tsx --ignore-pattern node_modules .",
-    "lint:fix": "eslint --ext .ts,.tsx --ignore-pattern node_modules --fix .",
-    "dev": "bun build ./code.ts --outdir . --watch"
+    "build:code": "bun build ./index.ts --outdir ./dist/code",
+    "dev:code": "bun build ./index.ts --outdir ./dist/code --watch",
+    "dev:ui": "vite build --watch",
+    "build:ui": "tsc && vite build",
+    "dev": "concurrently \"npm run dev:code\" \"npm run dev:ui\"",
+    "build": "mkdir -p dist && npm run build:ui && npm run build:code"
   },
   "author": "",
   "license": "",
@@ -17,8 +19,11 @@
     "@types/ramda": "^0.30.2",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
+    "concurrently": "^9.1.0",
     "eslint": "^8.54.0",
-    "typescript": "^5.3.2"
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vite-plugin-singlefile": "^2.0.3"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +48,10 @@
     }
   },
   "dependencies": {
-    "ramda": "^0.30.1"
+    "autoprefixer": "^10.4.20",
+    "highlight.js": "^11.10.0",
+    "postcss": "^8.4.49",
+    "ramda": "^0.30.1",
+    "tailwindcss": "^3.4.14"
   }
 }

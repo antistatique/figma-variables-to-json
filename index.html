@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Variables to JSON</title>
+  </head>
+  <body class="bg-[#2C2C2C] p-4">
+    <div>
+      <span class="isolate flex justify-center rounded-md shadow-sm mb-4">
+        <button
+          id="copy"
+          type="button"
+          class="relative inline-flex items-center rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+        >
+          📋 Copy Variables
+        </button>
+        <button
+          id="refresh"
+          type="button"
+          class="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+        >
+          🔄 Refresh
+        </button>
+      </span>
+      <pre
+        class="text-xs h-[86vh] overflow-auto border border-solid border-[#444444] rounded-md scrollbar-custom"
+      ><code class="language-json bg-[#2C2C2C]" id="variables"></code></pre>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
